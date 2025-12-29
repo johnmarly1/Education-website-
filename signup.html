@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body{
+        background-image:url(BACK.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .forms{
+        background-image: url(SIGN\ UP.png);
+        background-color: rgba(209, 229, 246, 0.619);
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        width: 300px;
+        position: relative;
+        left: 550px;
+        top: 140px;
+        padding: 30px 60px 30px 60px;
+        gap: 8px;
+        border-radius: 25PX; 
+        
+        
+    }
+    .registrations{
+        position:relative;
+        text-align: center;
+        font-size: 27px;
+        color: white;
+        font-weight:bold;
+    }
+    .name{
+        border-radius: 15px;
+        border: 2px orange none ;
+        padding:7px 0px 7px 15px; 
+        
+    }
+    .submit1{
+        position: relative;
+        bottom: 15px;
+        padding: 10px 20px 10px 20px ;
+        background-color:rgb(250, 181, 53);
+        text-align: center;
+        margin-left: 90px;
+        margin-right: 90px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .submit2{
+        background-color: rgb(246, 182, 65);
+        padding: 5px 15px 5px 15px;
+        border-radius: 40px;
+       
+    }
+    .all{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 15px;
+        color:black;
+        font-size: 17px;
+    }
+
+    
+  </style>
+  </head>
+  <body>
+    <form  class="forms">
+        <p class="registrations">SIGN UP</p>
+        <input class="name" type="text" name="name" placeholder="Full Name"></br>
+        <input class="name" type="email" name="email" placeholder="Email"></br>
+        <input class="name" type="password" name="password" placeholder="Password"></br>
+        <input class="name" type="password" name="confirmpassword" placeholder=" Confirm password"></br>
+        <button onclick="" class="submit1" type="button">Sign up</button>
+        <div class="all"><p>Allready have an account? &nbsp;&nbsp;&nbsp; <span><button onclick="window.location.href='signin.html'" class="submit2" type="button">log in </button></span></p></div>
+    </form>
+
+  </body>
+  </html>
