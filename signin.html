@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>sign in </title>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            body{
+                background-image: url(login.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .form1{
+                display: flex;
+                flex-direction: column;
+                background-color:rgba(176, 59, 59, 0.637);
+                position: relative;
+                height: 370px;
+                width: 300px;
+                margin-left: 920px;
+                margin-top: 250px;
+                padding: 20px 30px 20px 30px;
+                gap: 5px;
+                border-radius: 24px;
+            }
+            .head{
+                font-size: 19px;
+                text-align: center;
+                color: white;
+                font-weight: 300px;
+            }
+            .name{
+                border-radius: 15px;
+                padding: 10px 10px 10px 30px ;
+            }
+            .labe{
+                color: white;
+                padding-top: 10px;
+                font-size: 18px;
+            }
+            .p2{
+                color: white;
+            }
+            .sign1{
+                background-color: orange;
+                padding: 7px 20px 7px 20px ;
+                border-radius: 20px;
+                color: white;
+                font-weight: 500;
+                font-size: 16px;
+            }
+
+         </style>
+    </head>
+    <body>
+
+        <form class="form1">
+            <p class="head">Login to your account</p>
+            <label class="labe">Username</label></br>
+            <input id="username" class="name" type="text" name="Username"  placeholder="Username"></br>
+            <label class="labe">Password</label></br>
+            <input id="password" class="name" type="password" name="password" placeholder="Password"></br>
+            <div><P class="p2">Create new account <span><a href="signup.html" style="color: orange;">Sign up </a> </spa>&nbsp;&nbsp;&nbsp;&nbsp;<span>
+            <button onclick="" class="sign1" type="submit">Submit</button></span></P></div> 
+        </form>
+
+
+        
+    </body>
+    <script>
+        document.querySelector(".sign1").addEventListener("click", e => {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username === "admin" && password === "1234") {
+    localStorage.setItem("sign1", "true");
+    window.location.href = "another.html";
+  } else {
+    alert("Wrong login");
+  }
+});
+    </script>
+</html>
