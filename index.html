@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>tijaabo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+             
+            body{
+               
+                background-color: lightblue;
+            }
+            .nav{
+                background:linear-gradient(30deg,rgb(255, 197, 90),rgb(120, 249, 120) );
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                height: 90px;
+                border-radius: 15px;
+            }
+            .night{
+                 background: rgb(106, 101, 101);
+                 color: white;
+            }
+            .mainmenu{
+                display: flex;
+                list-style: none;
+                
+                gap: 50px;
+                margin-left: 180px;
+            }
+             .mainmenu li a{
+                text-decoration: none;
+                font-size: 18px;   
+            }
+            .mainmenu li a:hover{ 
+                font-size: 19px;
+                color: rgb(251, 139, 33);
+            } 
+            .rightside{
+                margin-left: 120px;   
+            }
+            .input{
+                background-color: rgb(251, 209, 130);
+                border-radius: 10px;
+            }
+            .dark{
+                margin-top: -40px;
+                margin-left: 22px;
+                border-radius: 11px;
+                border: 1px,white,ridge;  
+            }
+            .login{
+                background-color: orange;
+                color: white;
+                margin-left: 30px;
+                padding: 5px 15px 5px 15px;
+                border-radius: 5px;
+            }
+            .bodyga{
+                background-image:url(dashboard.png);
+                background-size: cover ;
+                min-height: 80vh;
+                position: relative;
+                bottom: 25px;
+            }
+            .h1{
+                float: left;
+                font-size: 80px;
+                padding-left: 120px;
+            }
+            .p1{
+                font-size: 20px;
+                margin-left: 120px; 
+                word-spacing: 4px;
+            }
+            .startnow{
+                background-color: aqua;
+                color: rgb(11, 8, 1);
+                font-weight:bold;
+                font-size: 16px;
+                position: relative;
+                left: 400px;
+                top: 22px;
+                padding : 10px 30px 10px 30px ;
+                border-radius: 20px;    
+            }
+            .section{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 50px;
+                margin: 50px 80px 50px 80px;    
+            }
+            .card{
+                background-color: rgb(254, 210, 109);
+                width: 400px;
+                height: 200px;
+                margin-left:px;
+                border-radius: 12px;
+            }
+            .section :hover{
+                transform: scale(1.009);
+            }
+            .Enroll{
+                position: relative;
+                left: 135px;
+                top: 35px;
+                padding: 10px 50px 10px 50px;
+                background-color: rgb(148, 255, 246);
+                color: rgb(12, 12, 12);
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 25px;
+            }
+            .Enroll:hover{
+                background-color: orange;
+                color: blue;
+                transform: translate(1px,1px);
+                transform:scale(1.1) ; 
+                box-shadow: 0 10px 20px rgb(243, 161, 10);
+            }
+            .h2{
+                position: relative;
+                left:116px;
+                top: 25px;
+                color: rgb(14, 161, 3);
+            }
+            .fa-code{
+                 color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+            .fa-chart-line{
+                color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+            .fa-pen-nib{
+                 color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+            .fa-microchip{
+                 color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+            .fa-calculator{
+                 color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+            .fa-globe{
+                 color: red;
+                position:relative;
+                left: 180px;
+                top: 30px;
+                font-size: 50px;
+            }
+           
+
+        </style>
+    </head>
+    <body class="night">
+    <nav class="nav">
+
+        <div class="logo"><img src="logo.png" height="150px" width="150px" ></div>
+
+        <div class="menu">
+            <ul class="mainmenu">
+                <li><a href="#">HOME</a></li>
+                 <li><a href="#">BLOG</a></li>
+                  <li><a href="#">SERVICE</a></li>
+                   <li><a href="#">COURSES</a></li>
+                    <li><a href="#">ABOUT </a></li>
+                     <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+         <div class="rightside">
+            <input class="input" type="text" placeholder="search" >
+            <button onclick="window.location.href='signin.html'" class="login">LOGIN </button>    
+        </div>
+        <button onclick="dark()" class="dark">🌙</button>
+
+    </nav>
+    
+    <div class="bodyga">
+        <h1 class="h1" style="width:700px;">Knowvera  Your Modern Learning &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: orange;">Platform</span></h1>
+        <p class="p1" style="width: 700px;">
+      Welcome to Knowvera your modern learning platform!  
+      Here you can learn new skills, explore lessons in science, technology, math, coding, and general knowledge to help you improve your abilities.  
+      We also provide tutorials, quizzes, and interactive lessons to make learning easier and more engaging.
+    </p></p>
+    <div><button onclick="" class="startnow">Start Now </button></div>
+    </div>
+
+    <div class="section">
+        <div class="card">
+            <div>
+               <i class="fa-solid fa-code"></i>
+            </div>
+            <div>
+            <h2 class="h2">Web development</h2>
+            <button class="Enroll">Enroll</button>
+        </div>
+        </div>
+        <div class="card">
+            <div>
+               <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div>
+            <h2 class="h2">&nbsp;&nbsp;&nbsp;&nbsp;Data science</h2>
+            <button class="Enroll">Enroll</button>
+        </div></div>
+        <div class="card">
+            <div>
+                <i class="fa-solid fa-pen-nib" ></i>
+            </div>
+            <div>
+            <h2 class="h2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design </h2>
+            <button class="Enroll">Enroll</button>
+        </div></div>
+        <div class="card">
+            <div>
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div>
+            <h2 class="h2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technology </h2>
+            <button class="Enroll">Enroll</button>
+        </div></div>
+        <div class="card">
+            <div>
+               <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div>
+            <h2 class="h2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Math  </h2>
+            <button class="Enroll">Enroll</button>
+        </div></div>
+        <div class="card">
+            <div>
+               <i class="fa-solid fa-globe"></i>
+            
+            </div>
+            <div>
+            <h2 class="h2"> General knowledge </h2>
+            <button class="Enroll">Enroll</button></div>
+    </div>
+</div>
+    
+    </body>
+
+
+ <script>
+        function dark() {
+  document.body.classList.toggle("night");
+}
+
+    </script>
+
+</html>
